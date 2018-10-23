@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.proofhub.base.Base;
 
 public class UsernamePage extends Base {
+	//declare explicit wait at top of page class
 	WebDriverWait wait = new WebDriverWait(driver, 20);
 	//WebDriverWait wait;
 	// this class contains webelements of login page and methods to be performed on
