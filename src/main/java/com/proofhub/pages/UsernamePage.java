@@ -41,10 +41,10 @@ public class UsernamePage extends Base {
 
 	}
 
-	public LoginPage enterEmail(String un) {
+	public PasswordPage enterEmail(String un) {
 		emailField.sendKeys(un);
 		nextButton.click();
-		return new LoginPage();
+		return new PasswordPage();
 	}
 
 }

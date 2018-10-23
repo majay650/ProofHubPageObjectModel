@@ -6,12 +6,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.proofhub.base.Base;
-import com.proofhub.pages.LoginPage;
+import com.proofhub.pages.PasswordPage;
 import com.proofhub.pages.UsernamePage;
 
 public class UsernamePageTest extends Base {
 	UsernamePage usernamePage;
-	LoginPage loginPage;
+	PasswordPage passwordPage;
 	// UsernamePage usernamePage;
 	// We will create test cases for username page using testNg annotations
 
@@ -40,7 +40,7 @@ public class UsernamePageTest extends Base {
 
 	@Test(priority = 3)
 	public void enterEmail() {
-		loginPage = usernamePage.enterEmail(prop.getProperty("username"));
+		passwordPage = usernamePage.enterEmail(prop.getProperty("username"));
 
 	}
 
