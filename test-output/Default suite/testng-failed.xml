@@ -5,9 +5,8 @@
     <classes>
       <class name="com.proofhub.testcases.UsernamePageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyUsernamePageTitleTest"/>
+          <include name="clickHelpLinkTest"/>
         </methods>
       </class> <!-- com.proofhub.testcases.UsernamePageTest -->
     </classes>

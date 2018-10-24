@@ -13,7 +13,7 @@ public class UsernamePageTest extends Base {
 	UsernamePage usernamePage;
 	PasswordPage passwordPage;
 	// UsernamePage usernamePage;
-	// We will create test cases for username page using testNg annotations
+	// We will create test cases for user name page using testNg annotations
 
 	public UsernamePageTest() {
 		super();
@@ -37,8 +37,15 @@ public class UsernamePageTest extends Base {
 		boolean flag = usernamePage.verifyCompanyName();
 		Assert.assertTrue(flag, "Company name is not displayed on username page");
 	}
-
+	
 	@Test(priority = 3)
+	public void clickHelpLinkTest() {
+		String title = usernamePage.clickHelpLink();
+		Assert.assertEquals(title, "Login - ProofHub Help", "Title of help link is not correct");
+
+	}
+	
+	@Test(priority = 4)
 	public void enterEmail() {
 		passwordPage = usernamePage.enterEmail(prop.getProperty("username"));
 

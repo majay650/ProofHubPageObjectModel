@@ -21,8 +21,6 @@ public class PasswordPageTest extends Base{
 		
 		initialization();
 		 passwordPage = new PasswordPage();
-	
-	
 	}
 	
 	@Test(priority = 1)
