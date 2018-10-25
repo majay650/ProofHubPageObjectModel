@@ -13,7 +13,7 @@ public class UsernamePageTest extends Base {
 	UsernamePage usernamePage;
 	PasswordPage passwordPage;
 	// UsernamePage usernamePage;
-	// We will create test cases for username page using testNg annotations
+	// We will create test cases for user name page using testNg annotations
 
 	public UsernamePageTest() {
 		super();
@@ -41,7 +41,6 @@ public class UsernamePageTest extends Base {
 	@Test(priority = 3)
 	public void enterEmail() {
 		passwordPage = usernamePage.enterEmail(prop.getProperty("username"));
-
 	}
 
 	@AfterMethod
