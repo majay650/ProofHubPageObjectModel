@@ -37,9 +37,16 @@ public class UsernamePageTest extends Base {
 		boolean flag = usernamePage.verifyCompanyName();
 		Assert.assertTrue(flag, "Company name is not displayed on username page");
 	}
-
+	
 	@Test(priority = 3)
-	public void enterEmail() {
+	public void clickHelpLinkTest() {
+		String title = usernamePage.clickHelpLink();
+		Assert.assertEquals(title, "Login - ProofHub Help", "Title of help link is not correct");
+
+	}
+	
+	@Test(priority = 4)
+	public void enterEmailTest() {
 		passwordPage = usernamePage.enterEmail(prop.getProperty("username"));
 	}
 

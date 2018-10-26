@@ -1,5 +1,7 @@
 package com.proofhub.pages;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,10 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.proofhub.base.Base;
 
 public class UsernamePage extends Base {
-	//declare explicit wait at top of page class
+	// declare explicit wait at top of page class
 	WebDriverWait wait = new WebDriverWait(driver, 20);
-	//WebDriverWait wait;
-	// this class contains webelements of login page and methods to be performed on
+	// WebDriverWait wait;
+	// this class contains web elements of login page and methods to be performed on
 	// login page
 
 	@FindBy(xpath = "//label[@id='label-1015']")
@@ -24,7 +26,10 @@ public class UsernamePage extends Base {
 	@FindBy(xpath = "//span[contains(text(),'NEXT')][@id='button-1019-btnInnerEl']")
 	WebElement nextButton;
 
-	// Initialize the webelements created for login page
+	@FindBy(linkText = "Need help?")
+	WebElement helpLink;
+
+	// Initialize the web elements created for login page
 	public UsernamePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -41,6 +46,20 @@ public class UsernamePage extends Base {
 
 	}
 
+	public String clickHelpLink() {
+		String handle = driver.getWindowHandle();
+		System.out.println(handle);
+		helpLink.click();
+		Set handles = driver.getWindowHandles();
+		System.out.println(handles);
+		for(String handle1 : driver.getWindowHandles()) {
+			driver.switchTo().window(handle1);
+		}
+		return driver.getTitle();	
+		//driver.close();
+		//System.out.println( driver.getTitle());
+	}
+	
 	public PasswordPage enterEmail(String un) {
 		emailField.sendKeys(un);
 		nextButton.click();

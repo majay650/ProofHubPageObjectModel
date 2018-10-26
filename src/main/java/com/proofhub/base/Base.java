@@ -46,7 +46,7 @@ public class Base {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGELOADTIME, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICITWAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		//TestUtil.webDriverWait();
+		TestUtil.webDriverWait();
 
 	
 	}

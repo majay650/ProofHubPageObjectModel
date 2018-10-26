@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57131" started-at="2018-10-23T02:26:18Z" finished-at="2018-10-23T02:27:15Z">
+  <suite name="Automation of ProofHub Lite application" duration-ms="37748" started-at="2018-10-26T03:08:33Z" finished-at="2018-10-26T03:09:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57131" started-at="2018-10-23T02:26:18Z" finished-at="2018-10-23T02:27:15Z">
-      <class name="com.proofhub.testcases.UsernamePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="setUp" is-config="true" duration-ms="14900" started-at="2018-10-23T02:26:18Z" finished-at="2018-10-23T02:26:33Z">
+    <test name="ProofHub Lite application test cases" duration-ms="37748" started-at="2018-10-26T03:08:33Z" finished-at="2018-10-26T03:09:11Z">
+      <class name="com.proofhub.testcases.PasswordPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="setUp" is-config="true" duration-ms="18632" started-at="2018-10-26T03:08:33Z" finished-at="2018-10-26T03:08:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUsernamePageTitleTest()[pri:1, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="verifyUsernamePageTitleTest" duration-ms="4386" started-at="2018-10-23T02:26:33Z" finished-at="2018-10-23T02:26:37Z">
+        <test-method status="PASS" signature="verifyUsernameOnPasswordPageTest()[pri:1, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="verifyUsernameOnPasswordPageTest" duration-ms="646" started-at="2018-10-26T03:08:52Z" finished-at="2018-10-26T03:08:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUsernamePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="824" started-at="2018-10-23T02:26:37Z" finished-at="2018-10-23T02:26:38Z">
+        </test-method> <!-- verifyUsernameOnPasswordPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="958" started-at="2018-10-26T03:08:52Z" finished-at="2018-10-26T03:08:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="setUp" is-config="true" duration-ms="11987" started-at="2018-10-23T02:26:38Z" finished-at="2018-10-23T02:26:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="setUp" is-config="true" duration-ms="16012" started-at="2018-10-26T03:08:53Z" finished-at="2018-10-26T03:09:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCompanyName()[pri:2, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="verifyCompanyName" duration-ms="4131" started-at="2018-10-23T02:26:50Z" finished-at="2018-10-23T02:26:54Z">
+        <test-method status="PASS" signature="enterPasswordTest()[pri:2, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="enterPasswordTest" duration-ms="627" started-at="2018-10-26T03:09:09Z" finished-at="2018-10-26T03:09:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCompanyName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="873" started-at="2018-10-23T02:26:54Z" finished-at="2018-10-23T02:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="setUp" is-config="true" duration-ms="14473" started-at="2018-10-23T02:26:55Z" finished-at="2018-10-23T02:27:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterEmail()[pri:3, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="enterEmail" duration-ms="4519" started-at="2018-10-23T02:27:10Z" finished-at="2018-10-23T02:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="986" started-at="2018-10-23T02:27:14Z" finished-at="2018-10-23T02:27:15Z">
+        </test-method> <!-- enterPasswordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.proofhub.testcases.PasswordPageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="822" started-at="2018-10-26T03:09:10Z" finished-at="2018-10-26T03:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.proofhub.testcases.UsernamePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.proofhub.testcases.PasswordPageTest -->
+    </test> <!-- ProofHub Lite application test cases -->
+  </suite> <!-- Automation of ProofHub Lite application -->
 </testng-results>

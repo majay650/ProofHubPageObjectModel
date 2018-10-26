@@ -10,7 +10,10 @@ public class TestUtil extends Base {
 	public static long IMPLICITWAIT = 20;
 	//public static WebDriverWait wait;
 
-	
+	public static void webDriverWait () {
+		
+		 WebDriverWait wait = new WebDriverWait(driver, 20);
+	}
 	
 	
 }
