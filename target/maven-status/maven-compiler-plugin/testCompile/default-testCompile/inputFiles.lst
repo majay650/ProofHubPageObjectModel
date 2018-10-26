@@ -1,2 +1,2 @@
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/test/java/com/proofhub/testcases/UsernamePageTest.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/test/java/com/proofhub/testcases/PasswordPageTest.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/test/java/com/proofhub/testcases/PasswordPageTest.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/test/java/com/proofhub/testcases/UsernamePageTest.java

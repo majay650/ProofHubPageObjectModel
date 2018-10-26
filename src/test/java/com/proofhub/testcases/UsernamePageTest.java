@@ -23,7 +23,6 @@ public class UsernamePageTest extends Base {
 	public void setUp() {
 		initialization();
 		usernamePage = new UsernamePage();
-
 	}
 
 	@Test(priority = 1)
@@ -42,7 +41,6 @@ public class UsernamePageTest extends Base {
 	public void clickHelpLinkTest() {
 		String title = usernamePage.clickHelpLink();
 		Assert.assertEquals(title, "Login - ProofHub Help", "Title of help link is not correct");
-
 	}
 	
 	@Test(priority = 4)
@@ -50,6 +48,15 @@ public class UsernamePageTest extends Base {
 		passwordPage = usernamePage.enterEmail(prop.getProperty("username"));
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

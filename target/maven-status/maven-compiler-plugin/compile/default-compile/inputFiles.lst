@@ -1,7 +1,7 @@
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/pages/PasswordPage.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/pages/DiscussionPage.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/util/TestUtil.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/pages/HomePage.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/pages/UsernamePage.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/base/Base.java
-/Applications/MAMP/htdocs/SeleniumWorkspace/ProofHubPageObjectModel/src/main/java/com/proofhub/pages/ProjectsPage.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/pages/PasswordPage.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/pages/UsernamePage.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/pages/ProjectsPage.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/pages/HomePage.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/base/Base.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/util/TestUtil.java
+/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/pages/DiscussionPage.java

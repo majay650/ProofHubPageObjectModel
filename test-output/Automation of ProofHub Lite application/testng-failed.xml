@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Automation of ProofHub Lite application]">
   <test thread-count="5" name="ProofHub Lite application test cases(failed)">
     <classes>
-      <class name="com.proofhub.testcases.PasswordPageTest">
+      <class name="com.proofhub.testcases.UsernamePageTest">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyUsernameOnPasswordPageTest"/>
+          <include name="setUp"/>
+          <include name="clickHelpLinkTest"/>
         </methods>
-      </class> <!-- com.proofhub.testcases.PasswordPageTest -->
+      </class> <!-- com.proofhub.testcases.UsernamePageTest -->
     </classes>
   </test> <!-- ProofHub Lite application test cases(failed) -->
 </suite> <!-- Failed suite [Automation of ProofHub Lite application] -->

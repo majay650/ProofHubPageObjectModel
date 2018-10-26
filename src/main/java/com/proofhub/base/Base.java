@@ -22,19 +22,19 @@ public class Base {
 		try {
 			prop = new Properties();
 			FileInputStream finput = new FileInputStream(
-					"D:\\training\\ProofHub\\src\\main\\java\\" + "com\\proofhub\\config\\com.properties");
+					"/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/config/com.properties");
 			prop.load(finput);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-
 		}
-
 	}
 
 	// method to initialize browser
 	public static void initialization() {
+		System.setProperty("webdriver.chrome.driver", "/Users/macmini/Downloads/chromedriver");
+
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			driver = new ChromeDriver();
@@ -46,9 +46,7 @@ public class Base {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGELOADTIME, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICITWAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		TestUtil.webDriverWait();
-
-	
+		TestUtil.webDriverWait();	
 	}
 
 }

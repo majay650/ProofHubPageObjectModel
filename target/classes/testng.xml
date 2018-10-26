@@ -4,7 +4,20 @@
 
   <test name="ProofHub Lite application test cases" >
     <classes>
+      <class name="com.proofhub.testcases.UsernamePageTest"/>
+    </classes>
+    </test>
+    
+    <test name = "Lite2" >
+     <classes>
       <class name="com.proofhub.testcases.PasswordPageTest"/>
     </classes>
  </test>
+    <test name = "Lite3" >
+     <classes>
+      <class name="com.proofhub.testcases.HomePageTest"/>
+    </classes>
+ </test>
+ 
+ 
 </suite>
