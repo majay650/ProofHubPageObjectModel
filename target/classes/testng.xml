@@ -8,12 +8,12 @@
     </classes>
     </test>
     
-    <test name = "Lite2" >
+    <test name = "ProofHub Lite application test cases2" >
      <classes>
       <class name="com.proofhub.testcases.PasswordPageTest"/>
     </classes>
  </test>
-    <test name = "Lite3" >
+    <test name = "ProofHub Lite application test cases3" >
      <classes>
       <class name="com.proofhub.testcases.HomePageTest"/>
     </classes>

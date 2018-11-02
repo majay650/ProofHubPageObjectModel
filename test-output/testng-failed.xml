@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.proofhub.testcases.HomePageTest">
+      <class name="com.proofhub.testcases.UsernamePageTest">
         <methods>
-          <include name="verifyUsernameOnHomePageTest"/>
           <include name="setUp"/>
+          <include name="verifyUsernamePageTitleTest"/>
         </methods>
-      </class> <!-- com.proofhub.testcases.HomePageTest -->
+      </class> <!-- com.proofhub.testcases.UsernamePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

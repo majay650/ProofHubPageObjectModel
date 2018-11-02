@@ -22,7 +22,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			FileInputStream finput = new FileInputStream(
-					"/Applications/MAMP/htdocs/SeleniumWorkspace/src/main/java/com/proofhub/config/com.properties");
+					"D:\\training\\ProofHub\\src\\main\\java\\com\\proofhub\\config\\com.properties");
 			prop.load(finput);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -33,7 +33,7 @@ public class Base {
 
 	// method to initialize browser
 	public static void initialization() {
-		System.setProperty("webdriver.chrome.driver", "/Users/macmini/Downloads/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "/Users/macmini/Downloads/chromedriver");
 
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {

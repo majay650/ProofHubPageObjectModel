@@ -3,6 +3,7 @@ package com.proofhub.pages;
 import java.util.Set;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,6 +14,7 @@ import com.proofhub.base.Base;
 public class UsernamePage extends Base {
 	// declare explicit wait at top of page class
 	WebDriverWait wait = new WebDriverWait(driver, 20);
+	Actions action = new Actions(driver);
 	// WebDriverWait wait;
 	// this class contains web elements of login page and methods to be performed on
 	// login page
@@ -28,7 +30,13 @@ public class UsernamePage extends Base {
 
 	@FindBy(linkText = "Need help?")
 	WebElement helpLink;
+	
+	@FindBy(xpath = "//ul/li[contains(.,\"Field can't be left blank\")]" )
+	WebElement usernameValidationMsg;
 
+	@FindBy(xpath = "//div[contains(text(),'Log in to continue')]")
+	WebElement loginText;
+	
 	// Initialize the web elements created for login page
 	public UsernamePage() {
 		PageFactory.initElements(driver, this);
@@ -65,5 +73,21 @@ public class UsernamePage extends Base {
 		nextButton.click();
 		return new PasswordPage();
 	}
+	
+	public boolean verifyBlankUsernameValidationMsgPresence() {
+		nextButton.click();
+		action.moveToElement(emailField).build().perform();
+		return usernameValidationMsg.isDisplayed();
+	}
 
+	
+	public boolean verifyLoginTextOnUsernamePage() {
+		return loginText.isDisplayed();	
+		
+	}	
+	
+	public boolean verifyNextButtonPresence() {
+		return nextButton.isDisplayed();
+	}
+	
 }
