@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation of ProofHub Lite application]">
-  <test thread-count="5" name="ProofHub Lite application test cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.proofhub.testcases.PasswordPageTest">
+      <class name="com.proofhub.testcases.HomePageTest">
         <methods>
+          <include name="verifyUsernameOnHomePageTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyUsernameOnPasswordPageTest"/>
         </methods>
-      </class> <!-- com.proofhub.testcases.PasswordPageTest -->
+      </class> <!-- com.proofhub.testcases.HomePageTest -->
     </classes>
-  </test> <!-- ProofHub Lite application test cases(failed) -->
-</suite> <!-- Failed suite [Automation of ProofHub Lite application] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
