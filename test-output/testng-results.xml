@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18815" started-at="2018-11-02T02:52:16Z" finished-at="2018-11-02T02:52:35Z">
+  <suite name="Default suite" duration-ms="27431" started-at="2018-11-12T02:52:30Z" finished-at="2018-11-12T02:52:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18815" started-at="2018-11-02T02:52:16Z" finished-at="2018-11-02T02:52:35Z">
-      <class name="com.proofhub.testcases.UsernamePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.UsernamePageTest@41eaa2]" name="setUp" is-config="true" duration-ms="14192" started-at="2018-11-02T02:52:16Z" finished-at="2018-11-02T02:52:30Z">
+    <test name="Default test" duration-ms="27431" started-at="2018-11-12T02:52:30Z" finished-at="2018-11-12T02:52:57Z">
+      <class name="com.proofhub.testcases.PasswordPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.proofhub.testcases.PasswordPageTest@41eaa2]" name="setUp" is-config="true" duration-ms="26664" started-at="2018-11-12T02:52:30Z" finished-at="2018-11-12T02:52:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="veriftNextButtonPresenceTest()[pri:7, instance:com.proofhub.testcases.UsernamePageTest@41eaa2]" name="veriftNextButtonPresenceTest" duration-ms="4583" started-at="2018-11-02T02:52:30Z" finished-at="2018-11-02T02:52:35Z">
+        <test-method status="PASS" signature="backToLoginFunctionalityTest()[pri:5, instance:com.proofhub.testcases.PasswordPageTest@41eaa2]" name="backToLoginFunctionalityTest" duration-ms="716" started-at="2018-11-12T02:52:56Z" finished-at="2018-11-12T02:52:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- veriftNextButtonPresenceTest -->
-      </class> <!-- com.proofhub.testcases.UsernamePageTest -->
+        </test-method> <!-- backToLoginFunctionalityTest -->
+      </class> <!-- com.proofhub.testcases.PasswordPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -59,7 +59,7 @@ public class UsernamePageTest extends Base {
 	@Test(priority = 6)
 	public void verifyLoginTextOnUsernamePageTest() {
 		boolean flag = usernamePage.verifyLoginTextOnUsernamePage();
-		Assert.assertFalse(true, "Login to continue  text is not displayed on username page");
+		Assert.assertTrue(flag, "Login to continue  text is not displayed on username page");
 
 	}
 
@@ -71,9 +71,9 @@ public class UsernamePageTest extends Base {
 		
 	}
 
-	// @AfterMethod
-	// public void tearDown() {
-	// driver.quit();
-	// }
+	 @AfterMethod
+	 public void tearDown() {
+	 driver.quit();
+	 }
 
 }

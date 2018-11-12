@@ -22,6 +22,12 @@ public class PasswordPage extends Base {
 	@FindBy(xpath = "//label[contains(text(),'aj*********ur@sdplabs.com')][@id='label-1034']")
 	WebElement usernameOnPasswordPage;
 
+	@FindBy(xpath = "//label[@id='label-1032']")
+	WebElement comanyNamePasswordPage;
+	
+	@FindBy (linkText = "Back to login")
+	WebElement  backToLoginLink;
+	
 	// initialize the page factory elements
 
 	public PasswordPage() {
@@ -41,4 +47,26 @@ public class PasswordPage extends Base {
 		return new HomePage();
 	}
 
+	public boolean verifyCompanyNameOnPasswordPage() {
+		wait.until(ExpectedConditions.visibilityOf(usernameOnPasswordPage));
+		
+		return comanyNamePasswordPage.isDisplayed();
+		
+	}
+	
+	public boolean loginButtonPresence() {
+		wait.until(ExpectedConditions.visibilityOf(loginButton));
+		return loginButton.isDisplayed();
+		
+	}
+	
+	public boolean backToLoginFunctionality() {
+		backToLoginLink.click();
+		UsernamePage usernamePage = new  UsernamePage();
+		return usernamePage.loginText.isDisplayed();
+		
+	}
+	
+	
+	
 }
