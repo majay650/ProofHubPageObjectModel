@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.proofhub.testcases.PasswordPageTest">
+      <class name="com.proofhub.testcases.ForgotPasswordPageTest">
         <methods>
+          <include name="verifyForgotPasswordMessage"/>
           <include name="setUp"/>
-          <include name="backToLoginFunctionalityTest"/>
         </methods>
-      </class> <!-- com.proofhub.testcases.PasswordPageTest -->
+      </class> <!-- com.proofhub.testcases.ForgotPasswordPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,7 @@ public class PasswordPageTest extends Base {
 	HomePage homePage;
 	UsernamePage usernamePage;
 	TestUtil testUtil;
-	// write testcases of password page using testNG
+	// write test cases of password page using testNG
 
 	public PasswordPageTest() {
 		super();
@@ -36,7 +36,7 @@ public class PasswordPageTest extends Base {
 	@Test(priority = 1)
 	public void verifyUsernameOnPasswordPageTest() {
 		boolean flag = passwordPage.verifyUsernameOnPasswordPage();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag, "Issue in displaying username on password page");
 
 	}
 
@@ -50,7 +50,7 @@ public class PasswordPageTest extends Base {
 	public void companyNameOnPasswordPageTest() {
 
 		boolean flag = passwordPage.verifyCompanyNameOnPasswordPage();
-		Assert.assertTrue(flag, "Issue in displaying company nam eon password page");
+		Assert.assertTrue(flag, "Issue in displaying company name on password page");
 	}
 
 	@Test(priority = 4)

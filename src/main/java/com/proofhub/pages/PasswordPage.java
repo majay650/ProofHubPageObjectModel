@@ -10,6 +10,7 @@ import com.proofhub.base.Base;
 
 public class PasswordPage extends Base {
 	WebDriverWait wait = new WebDriverWait(driver, 20);
+	UsernamePage usernamePage = new  UsernamePage();
 
 	// create page factory for all elements of password page here
 
@@ -27,6 +28,9 @@ public class PasswordPage extends Base {
 	
 	@FindBy (linkText = "Back to login")
 	WebElement  backToLoginLink;
+	
+	@FindBy(linkText = "Forgot password?")
+	WebElement forgotPasswordLink;
 	
 	// initialize the page factory elements
 
@@ -62,11 +66,12 @@ public class PasswordPage extends Base {
 	
 	public boolean backToLoginFunctionality() {
 		backToLoginLink.click();
-		UsernamePage usernamePage = new  UsernamePage();
 		return usernamePage.loginText.isDisplayed();
-		
 	}
 	
-	
+	public ForgotPasswordPage clickForgotPassword() {
+		forgotPasswordLink.click();
+		return new ForgotPasswordPage();
+	}
 	
 }
